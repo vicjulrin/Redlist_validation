@@ -425,6 +425,8 @@ print(red_resuLt_plot)
 
 ![](README_figures/red_resuLt_plot.jpg)
 
+![](README_figures/red_resuLt_plot.jpg)
+
 ### Resultados - ejecución manual (Butchart et al, 2004; 2007)
 
 N - numero de especies evaluadas = nrow(df_weights) calcula el número
