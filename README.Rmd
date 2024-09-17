@@ -244,5 +244,6 @@ knitr::kable(compare_data)
 compare_plot<- ggpubr::ggarrange(plotlist= list(red_resuLt_plot, Butchart_resuLt_plot), ncol= 2)
 print(compare_plot)
 ```
+
 ![](README_figures/compare_plot.jpg)
 
