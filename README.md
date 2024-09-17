@@ -13,6 +13,22 @@ output:
 
 Validación RLI - IAvH
 ================
+true
+
+- [Cargar librerias/paquetes necesarios para el
+  análisis](#cargar-libreriaspaquetes-necesarios-para-el-análisis)
+- [Definir inputs](#definir-inputs)
+- [Check lista de datos por taxon](#check-lista-de-datos-por-taxon)
+- [Obtener evaluacion historica de las especies listadas por
+  taxon](#obtener-evaluacion-historica-de-las-especies-listadas-por-taxon)
+- [Ajustar como matriz](#ajustar-como-matriz)
+- [Corregir categorias](#corregir-categorias)
+- [Ajustar matriz](#ajustar-matriz)
+- [Validación de resultados](#validación-de-resultados)
+  - [Resultados de la libreria red](#resultados-de-la-libreria-red)
+  - [Resultados - ejecución manual (Butchart et al, 2004;
+    2007)](#resultados---ejecución-manual-butchart-et-al-2004-2007)
+  - [Comparar resultados](#comparar-resultados)
 
 Este documento detalla la validación de los resultados para la
 estimación del Red List Index (RLI) realizada por el Instituto de
@@ -37,22 +53,6 @@ Client](https://cran.r-project.org/web/packages/rredlist/index.html)
 para consultar sus bases de datos, y estimando el indice a través de la
 librería [red IUCN Redlisting
 Tools](https://cran.r-project.org/web/packages/red/index.html).
-
-
-- [Cargar librerias/paquetes necesarios para el
-  análisis](#cargar-libreriaspaquetes-necesarios-para-el-análisis)
-- [Definir inputs](#definir-inputs)
-- [Check lista de datos por taxon](#check-lista-de-datos-por-taxon)
-- [Obtener evaluacion historica de las especies listadas por
-  taxon](#obtener-evaluacion-historica-de-las-especies-listadas-por-taxon)
-- [Ajustar como matriz](#ajustar-como-matriz)
-- [Corregir categorias](#corregir-categorias)
-- [Ajustar matriz](#ajustar-matriz)
-- [Validación de resultados](#validación-de-resultados)
-  - [Resultados de la libreria red](#resultados-de-la-libreria-red)
-  - [Resultados - ejecución manual (Butchart et al, 2004;
-    2007)](#resultados---ejecución-manual-butchart-et-al-2004-2007)
-  - [Comparar resultados](#comparar-resultados)
 
 ### Cargar librerias/paquetes necesarios para el análisis
 
