@@ -157,7 +157,6 @@ red_resuLt_plot<- ggplot(red_resuLt, aes(x = Year, y = RLI_red)) +
 
 print(red_resuLt_plot)
 ```
-![](README_figures/red_resuLt_plot.jpg)
 
 ![](README_figures/red_resuLt_plot.jpg)
 
