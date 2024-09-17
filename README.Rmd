@@ -1,7 +1,7 @@
 ---
 title: "Validación RLI - IAvH"
 author: 
-  - name: "Diaz Corso Camila; Rincon-Parra VJ"
+  - name: "Diaz Corzo Camila; Rincon-Parra VJ"
     email: "rincon-v@javeriana.edu.co"
 output: 
   github_document:
