@@ -129,16 +129,18 @@ compare_plot<- ggpubr::ggarrange(plotlist= list(red_resuLt_plot, Butchart_resuLt
 
 
 # export results
-openxlsx::write.xlsx(IUCN_sp_Taxon, file.path(output, paste0("IUCN_sp_Taxon", ".xlsx")) )
-openxlsx::write.xlsx(historyAssesment_data, file.path(output, paste0("historyAssesment_data", ".xlsx")) )
-openxlsx::write.xlsx(adjust_categories, file.path(output, paste0("adjust_categories", ".xlsx")) )
-openxlsx::write.xlsx(RedList_matrix, file.path(output, paste0("RedList_matrix", ".xlsx")) )
-openxlsx::write.xlsx(df, file.path(output, paste0("df", ".xlsx")) )
-openxlsx::write.xlsx(red_resuLt, file.path(output, paste0("red_resuLt", ".xlsx")) )
-openxlsx::write.xlsx(df_weights, file.path(output, paste0("df_weights", ".xlsx")) )
-openxlsx::write.xlsx(vars_period, file.path(output, paste0("vars_period", ".xlsx")) )
-openxlsx::write.xlsx(Butchart_result, file.path(output, paste0("Butchart_result", ".xlsx")) )
-openxlsx::write.xlsx(compare_data, file.path(output, paste0("compare_data", ".xlsx")) )
+openxlsx::write.xlsx(IUCN_sp_Taxon, file.path(output, paste0("IUCN_sp_Taxon", ".xlsx")), rowNames = TRUE ) 
+openxlsx::write.xlsx(historyAssesment_data, file.path(output, paste0("historyAssesment_data", ".xlsx")), rowNames = TRUE ) 
+openxlsx::write.xlsx(adjust_categories, file.path(output, paste0("adjust_categories", ".xlsx")), rowNames = TRUE ) 
+openxlsx::write.xlsx(RedList_matrix, file.path(output, paste0("RedList_matrix", ".xlsx")), rowNames = TRUE ) 
+openxlsx::write.xlsx(df, file.path(output, paste0("df", ".xlsx")), rowNames = TRUE ) 
+openxlsx::write.xlsx(red_resuLt, file.path(output, paste0("red_resuLt", ".xlsx")), rowNames = TRUE ) 
+openxlsx::write.xlsx(df_weights, file.path(output, paste0("df_weights", ".xlsx")), rowNames = TRUE ) 
+openxlsx::write.xlsx(vars_period, file.path(output, paste0("vars_period", ".xlsx")), rowNames = TRUE )
+
+
+openxlsx::write.xlsx(Butchart_result, file.path(output, paste0("Butchart_result", ".xlsx")), rowNames = TRUE )
+openxlsx::write.xlsx(compare_data, file.path(output, paste0("compare_data", ".xlsx")), rowNames = TRUE )
 
 ggsave(file.path(dirname(output), "README_figures", paste0("red_resuLt_plot", ".jpg")), red_resuLt_plot, height = 2, width = 4)
 ggsave(file.path(dirname(output), "README_figures", paste0("Butchart_resuLt_plot", ".jpg")), Butchart_resuLt_plot, height = 2, width = 4)

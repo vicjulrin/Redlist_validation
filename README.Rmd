@@ -178,9 +178,12 @@ $$
  
 Dónde M representa el máximo valor de amenaza, el cual se expresa de la siguiente manera:
 
+
 $$
 M = W_{EX}*N
 $$
+
+
 Para lo cual:
 
 N = numero de especies evaluadas = nrow(df_weights) calcula el número total de especies evaluadas, es decir, el número de filas en la matriz df_weights, que representa las especies y los pesos de las categorías de amenaza a lo largo del tiempo.
@@ -191,9 +194,12 @@ W~EX~ = Representa el peso maximo (5) de la categoría más alta de amenaza, que
 
 En la ecuación general T hace referencia a el valor de amenaza actual y es definido de la siguiente forma:
 
+
 $$
 T_t=\sum_{s}{W_{c(t,s)}}
 $$
+
+
 Para lo cual:
 
 W~c~ = Hace referencia al peso que se le asigna a cada categoria de amenaza el cual se obtiene usando: colSums(df_weights) al sumar los valores de los pesos de las categorías de amenaza para todas las especies en cada año.
